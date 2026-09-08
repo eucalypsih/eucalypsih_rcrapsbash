@@ -1,5 +1,19 @@
 # eucalypsih_rcrapsbash
 
+init
+```bash
+owner="eucalypsih";repo="ey_rcrapsc";mkdir ${repo} && sleep 0.5 && cd ${repo} && sleep 0.5 && git init && sleep 0.5 && git remote add origin git@github.com:${owner}/${repo}.git && sleep 0.5 && un="eucalypsih";ue="eucalypsih@gmail.com";git config user.name "$un" && sleep 0.5 && git config user.email "$ue" && sleep 0.5 && git config gpg.format ssh && sleep 0.5 && git config user.signingkey ~/.ssh/id_rsa.pub && sleep 0.5 && git config commit.gpgsign true && sleep 0.5 && git config gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers && sleep 0.5 && git checkout -b main
+
+```
+`owner="eucalypsih";repo="ey_rcrapsc";mkdir ${repo} && sleep 0.5 && cd ${repo} && sleep 0.5 && git init && sleep 0.5 && git remote add origin git@github.com:${owner}/${repo}.git && sleep 0.5 && un="eucalypsih";ue="eucalypsih@gmail.com";git config user.name "$un" && sleep 0.5 && git config user.email "$ue" && sleep 0.5 && git config gpg.format ssh && sleep 0.5 && git config user.signingkey ~/.ssh/id_rsa.pub && sleep 0.5 && git config commit.gpgsign true && sleep 0.5 && git config gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers && sleep 0.5 && git checkout -b main`
+
+<br>
+
+---
+
+<br>
+
+
 ```bash
 owner="eucalypsih";repo="eucalypsih_rcrapsbash";git clone -q --filter=blob:none --no-checkout git@github.com:${owner}/${repo}.git && sleep 0.5 && cd $repo && sleep 0.5 && un="eucalypsih";ue="eucalypsih@gmail.com";git config user.name "$un" && sleep 0.5 && git config user.email "$ue" && sleep 0.5 && git config gpg.format ssh && sleep 0.5 && git config user.signingkey ~/.ssh/id_rsa.pub && sleep 0.5 && git config commit.gpgsign true && sleep 0.5 && git config gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers && sleep 0.5 && git sparse-checkout set --no-cone '!/*' '/README.md' '/rename/' && sleep 0.5 && git checkout main
 
