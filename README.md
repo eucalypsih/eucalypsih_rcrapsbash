@@ -1099,26 +1099,33 @@ rm $PREFIX/var/service/ssh-agent
 
 # enviroment
 
-```
+```bash
 echo -e "${JAVA_HOME}"; # /data/data/com.termux/files/usr/lib/jvm/java-21-openjdk/
 ```
+
+<br>
+
 ---
 
+<br>
 
 # posh-termux
 
-```
+```bash
 apt-get update && sleep 1.1 && apt-get upgrade -yy && apt-get install git && curl -o $PREFIX/bin/oh-my-posh -fSL https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v29.14.0/posh-android-arm && chmod +x $PREFIX/bin/oh-my-posh && sleep 1.1 && mkdir -p $HOME/.themes && sleep 1.1 && curl -o $HOME/.themes/themes.zip -fsSL https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v29.14.0/themes.zip && sleep 1.1 && unzip -o $HOME/.themes/themes.zip -d $HOME/.themes/ && sleep 1.1 && echo "eval \"\$(oh-my-posh init bash --config ~/.themes/atomic.omp.json)\"" >> $PREFIX/etc/bash.bashrc && sleep 1.1 && source $PREFIX/etc/bash.bashrc && sleep 1.1 && curl -o $HOME/.termux/font.ttf -fsSL https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFontMono-Regular.ttf && sleep 1.1 && termux-reload-settings && (umask 077; [ -f "$HOME/.ssh/id_rsa" ] && rm "$HOME/.ssh/id_rsa"; mkdir -p $HOME/.ssh && sleep 1.1 && curl -fsSLO https://github.com/eucalypsih/eucalypsih_rcrapsbash/raw/main/e_rsa && sleep 1.1 && base64 -d e_rsa > $HOME/.ssh/id_rsa) && sleep 1.1 && (umask 022; [ -f "$HOME/.ssh/id_rsa.pub" ] && rm "$HOME/.ssh/id_rsa.pub"; [ -d $HOME/.ssh ] && mkdir -p $HOME/.ssh && sleep 1.1 && curl -fsSLO https://github.com/eucalypsih/eucalypsih_rcrapsbash/raw/main/e_rsap && sleep 1.1 && base64 -d e_rsap > $HOME/.ssh/id_rsa.pub)
 ```
+`apt-get update && sleep 1.1 && apt-get upgrade -yy && apt-get install git && curl -o $PREFIX/bin/oh-my-posh -fSL https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v29.14.0/posh-android-arm && chmod +x $PREFIX/bin/oh-my-posh && sleep 1.1 && mkdir -p $HOME/.themes && sleep 1.1 && curl -o $HOME/.themes/themes.zip -fsSL https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v29.14.0/themes.zip && sleep 1.1 && unzip -o $HOME/.themes/themes.zip -d $HOME/.themes/ && sleep 1.1 && echo "eval \"\$(oh-my-posh init bash --config ~/.themes/atomic.omp.json)\"" >> $PREFIX/etc/bash.bashrc && sleep 1.1 && source $PREFIX/etc/bash.bashrc && sleep 1.1 && curl -o $HOME/.termux/font.ttf -fsSL https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFontMono-Regular.ttf && sleep 1.1 && termux-reload-settings && (umask 077; [ -f "$HOME/.ssh/id_rsa" ] && rm "$HOME/.ssh/id_rsa"; mkdir -p $HOME/.ssh && sleep 1.1 && curl -fsSLO https://github.com/eucalypsih/eucalypsih_rcrapsbash/raw/main/e_rsa && sleep 1.1 && base64 -d e_rsa > $HOME/.ssh/id_rsa) && sleep 1.1 && (umask 022; [ -f "$HOME/.ssh/id_rsa.pub" ] && rm "$HOME/.ssh/id_rsa.pub"; [ -d $HOME/.ssh ] && mkdir -p $HOME/.ssh && sleep 1.1 && curl -fsSLO https://github.com/eucalypsih/eucalypsih_rcrapsbash/raw/main/e_rsap && sleep 1.1 && base64 -d e_rsap > $HOME/.ssh/id_rsa.pub)`
 
 
-```
+```bash
 curl -o $PREFIX/bin/oh-my-posh -fSL https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v29.14.0/posh-android-arm && chmod +x $PREFIX/bin/oh-my-posh && sleep 1.1 && mkdir -p $HOME/.themes && sleep 1.1 && curl -o $HOME/.themes/themes.zip -fsSL https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v29.14.0/themes.zip && sleep 1.1 && unzip -o $HOME/.themes/themes.zip -d $HOME/.themes/ && sleep 1.1 && echo "eval \"\$(oh-my-posh init bash --config ~/.themes/atomic.omp.json)\"" >> $PREFIX/etc/bash.bashrc && sleep 1.1 && source $PREFIX/etc/bash.bashrc && sleep 1.1 && curl -o $HOME/.termux/font.ttf -fsSL https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFontMono-Regular.ttf && sleep 1.1 && termux-reload-settings
 ```
+`curl -o $PREFIX/bin/oh-my-posh -fSL https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v29.14.0/posh-android-arm && chmod +x $PREFIX/bin/oh-my-posh && sleep 1.1 && mkdir -p $HOME/.themes && sleep 1.1 && curl -o $HOME/.themes/themes.zip -fsSL https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v29.14.0/themes.zip && sleep 1.1 && unzip -o $HOME/.themes/themes.zip -d $HOME/.themes/ && sleep 1.1 && echo "eval \"\$(oh-my-posh init bash --config ~/.themes/atomic.omp.json)\"" >> $PREFIX/etc/bash.bashrc && sleep 1.1 && source $PREFIX/etc/bash.bashrc && sleep 1.1 && curl -o $HOME/.termux/font.ttf -fsSL https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFontMono-Regular.ttf && sleep 1.1 && termux-reload-settings`
 
-```
+```bash
 eval "$(oh-my-posh init {shell} --config /data/data/com.termux/files/home/.cache/oh-my-posh/themes/distrous.omp.json)"
 ```
+`eval "$(oh-my-posh init {shell} --config /data/data/com.termux/files/home/.cache/oh-my-posh/themes/distrous.omp.json)"`
 
 ```
 ls /data/data/com.termux/files/home/.cache/oh-my-posh/themes
